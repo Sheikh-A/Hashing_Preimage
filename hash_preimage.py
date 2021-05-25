@@ -44,13 +44,14 @@ def hash_preimage(target_string):
         # random_string_hex = random_string_sha256.hexdigest()
         # #print(random_string_hex)
         # random_string_bin = (bin(int(random_string_hex, 16))[2:]).zfill(256)
+        # #print(random_string_bin)
+        # #logic for checking code if its is equal
+
 
         random_string = ''.join(random.choice(hash_letters) for i in range(12))
-        random_byte_string = random_string.encode('utf-8').hashlib.sha256().hexdigest()
+        random_byte_string = (hashlib.sha256(random_string.encode('utf-8'))).hexdigest()
         random_string_bin = (bin(int(random_byte_string, 16))[2:]).zfill(256)
 
-        #print(random_string_bin)
-        #logic for checking code if its is equal
         if (random_string_bin[-length_string_target:] == target_string):
             #Nonce is printed here
             #print(nonce)
