@@ -17,6 +17,8 @@ def hash_preimage(target_string):
     #Define acceptable string letters, digits, and punctuation
     hash_letters = string.ascii_letters
 
+    print(target_string) #check string
+
     length_string_target = len(target_string)
 
     while 1:
@@ -42,3 +44,55 @@ def hash_preimage(target_string):
     #check print nonce
     print(nonce)
     return(nonce)
+
+# =========== Running test 1 ===========
+# b'fydaHXinowiC'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 2 ===========
+# b'PHlIOCjBsgWs'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 3 ===========
+# b'EgJKuNgXIdeN'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 4 ===========
+# b'dDqAQRFVuxgJ'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 5 ===========
+# b'rdSkEjdkLsBk'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 6 ===========
+# b'iqMEOVROdgkd'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 7 ===========
+# b'fJObjOxCRDUN'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 8 ===========
+# b'KdieJmlnsYrN'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 9 ===========
+# b'pDSxHuEopSvM'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# =========== Running test 10 ===========
+# b'DmawJUkKygkZ'
+# hash_preimage ran successfully
+# hashlib successfully ran on your preimage
+# the preimage you found was actually a preimage
+# Your score is 10/10
