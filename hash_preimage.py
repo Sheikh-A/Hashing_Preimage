@@ -9,6 +9,16 @@ def hash_preimage(target_string):
         print("Input should be a string of bits")
         return
     nonce = b'\x00'
+
+    '''
+    Steps to take:
+    1. Find length of target string
+    2. Generate a random string of letters, numbers, integers
+    3. Encode random String
+    4. Use sha256 on random String
+    5. Convert sha256 to hex
+    6. Convert to bin 256 length
+    '''
     #Given from class code
     hash_digits = string.digits
     hash_punc = string.punctuation
